@@ -1,32 +1,19 @@
 <template>
-<div class="caixa">
-  <div>
-  <img src="https://matika.com.br/images/391/circulo_raio_r.svg">
-  <AreaCirculo></AreaCirculo>
-  </div>
-
-  <div>
-  <img src="https://matematicabasica.net/wp-content/uploads/2019/02/trapezio-2.png">
-  <AreaTrapezio></AreaTrapezio>
-  </div>
-
-  <div>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRantK_ozByqe7UpXMWUNByeg7_baaGnErPBw&s">
-    <AreaTriEqui></AreaTriEqui>
-  </div>
+<div>
+  <nav>
+    <router-link to="/">HOME</router-link>
+    <router-link to="/circulo">Área do Círculo</router-link>
+    <router-link to="/trapezio">Área do Trapézio</router-link>
+    <router-link to="/triangulo">Área do Triângulo</router-link>
+  </nav>
 </div>
+<router-view></router-view>
 </template>
 
 <script>
-import AreaCirculo from './components/AreaCirculo.vue';
-import AreaTrapezio from './components/AreaTrapezio.vue';
-import AreaTriEqui from './components/AreaTriEqui.vue';
 
 export default {
-  name: 'App',
-  components: {
-    AreaCirculo, AreaTrapezio, AreaTriEqui
-  }
+  name: 'App'
 }
 </script>
 

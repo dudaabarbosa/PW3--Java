@@ -1,5 +1,6 @@
 <template>
 <h2>ÁREA DO CÍRCULO</h2>
+<img src="https://matika.com.br/images/391/circulo_raio_r.svg">
 <form @submit.prevent="calculararea">
 <input type="number" v-model="raio" placeholder="Digite o valor do raio">
 <br>
@@ -21,7 +22,7 @@ export default {
     },
     methods: {
         calculararea(){
-            this.result= this.pi * (this.raio*this.raio);
+            this.result= Math.PI * (this.raio**2);
         }
     }
 }

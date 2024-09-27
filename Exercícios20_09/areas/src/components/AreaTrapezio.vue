@@ -1,5 +1,6 @@
 <template>
 <h2>ÁREA DO TRAPÉZIO</h2>
+<img src="https://matematicabasica.net/wp-content/uploads/2019/02/trapezio-2.png">
 <form @submit.prevent="calcularArea">
     <input type="number" v-model="basemaior" placeholder="Valor da base maior">
     <br>
