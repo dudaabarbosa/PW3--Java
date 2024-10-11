@@ -1,14 +1,16 @@
 <template>
-<MenuPage></MenuPage>
+<router-view></router-view>
+<FooterPage></FooterPage>
 </template>
 
 <script>
-import MenuPage from './components/MenuPage.vue';
+import FooterPage from './components/FooterPage.vue';
+
 
 export default {
   name: 'App',
   components: {
-    MenuPage
+    FooterPage
   }
 }
 </script>

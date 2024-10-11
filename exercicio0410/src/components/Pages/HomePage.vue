@@ -1,15 +1,15 @@
 <template>
+<MenuPage></MenuPage>
 <ContentPage></ContentPage>
-<FooterPage></FooterPage>
 </template>
 
 <script>
 import ContentPage from '../ContentPage.vue';
-import FooterPage from '../FooterPage.vue';
+import MenuPage from '../MenuPage.vue';
 
 export default {
     name: "HomePage",
-    components: {ContentPage, FooterPage}
+    components: {MenuPage, ContentPage}
 }
 </script>
 

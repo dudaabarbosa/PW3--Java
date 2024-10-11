@@ -9,34 +9,47 @@
         <th>Frase preferida</th>
         <th>Foto</th>
     </tr>
-    <tr>
-        <td>Eduarda Barbosa</td>
-        <td>17 anos</td>
-        <td>Amo dançar</td>
-        <td><img src="https://avatars.githubusercontent.com/u/143654177?s=400&u=e007a7cde5dc59774891c4bb96894c077431c231&v=4" alt=""></td>
+    <tr v-for="(objeto, index) in objetos" :key="index">
+        <td>{{ objeto.Nome }}</td>
+        <td>{{ objeto.Idade }}</td>
+        <td>{{ objeto.Frase }}</td>
+        <td><img class="imagem" :src="objeto.Foto"></td>
     </tr>
-    <tr>
-        <td>Khaléu Sanches</td>
-        <td>17 anos</td>
-        <td>Sim!</td>
-        <td><img src="" alt=""></td>
-    </tr>
+
 </table>
 
 </template>
 
 <script>
 export default {
-    name: "SobreNos"
+    name: "SobreNos",
+    data(){
+        return{
+            objetos: [
+                {"Nome": "Eduarda Barbosa", "Idade": "17 anos", "Frase": "É isso", "Foto": require("@/assets/dudis.jpg")},
+                {"Nome": "Khaléu Sanches", "Idade": "17 anos", "Frase": "Sim", "Foto": require("@/assets/babykhaleu.jpg") }]
+        }
+    }
+
 }
 </script>
 
 <style>
+p{
+    margin: 30px;
+}
+
 table{
     margin: auto;
+    border: 2px solid black;
+
 }
-img {
+.imagem {
     width: 30%;
     border-radius: 30%;
+}
+td, th{
+    padding: 15px;
+    border: 2px solid black;
 }
 </style>

@@ -2,13 +2,13 @@
     <header>
         <nav>
             <ul>
-                <router-link to="/">Home</router-link>
-                <router-link to="/sobre">Sobre nós</router-link>
-                <router-link to="/contact">Contato</router-link>
+                <router-link class="links" to="/Home">Home</router-link>
+                <router-link class="links" to="/sobre">Sobre nós</router-link>
+                <router-link class="links" to="/contact">Contato</router-link>
             </ul>
         </nav>
     </header>
-    <router-view></router-view>
+    
     </template>
     
     <script>
@@ -18,6 +18,8 @@
     </script>
     
     <style>
-    
+    .links{
+        margin: 30px;
+    }
     
     </style>
