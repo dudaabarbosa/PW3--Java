@@ -3,6 +3,8 @@ import AboutPage from "./components/Pages/AboutPage.vue";
 import HomePage from "./components/Pages/HomePage.vue";
 import ContactPage from "./components/Pages/ContactPage.vue";
 import LoginPage from "./components/Pages/LoginPage.vue";
+import FetchNaruto from "./components/FetchNaruto.vue";
+import InfoCharacters from "./components/InfoCharacters.vue";
 
 const routes = [
     {
@@ -24,6 +26,16 @@ const routes = [
         path: "/contact",
         name: "Contato",
         component: ContactPage
+    },
+    {
+        path: "/naruto",
+        name: "Naruto",
+        component: FetchNaruto
+    },
+    {
+        path: "/:id",
+        name: "Informações",
+        component: InfoCharacters
     }
 ];
 
