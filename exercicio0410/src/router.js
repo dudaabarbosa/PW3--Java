@@ -35,6 +35,7 @@ const routes = [
     {
         path: "/:id",
         name: "Informações",
+        props: true,
         component: InfoCharacters
     }
 ];

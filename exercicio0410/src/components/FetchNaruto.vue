@@ -16,7 +16,7 @@
                 <div class="card mb-4">
                     <img :src="character.images[0]" class="card-img-top">
                     <div class="card-body">
-                         <h4 class="card-title"> <router-link :to="'/'+character.id"> <b> {{ character.name }} </b> </router-link> </h4> 
+                         <h4 class="card-title"> <router-link :to="{name: 'Informações', params: {id: character.id}}"> <b> {{ character.name }} </b> </router-link> </h4> 
                          <div class="dropdown">
                             <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Jutsus
